@@ -5,15 +5,10 @@ html {
 }
 
 body {
-  background-image: url("https://images.pexels.com/photos/1194713/pexels-photo-1194713.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
-  background-repeat: repeat-y;
-  background-size: contain;
-  color: white;
-  height: 100%;
-  cursor: arrow;
-  margin:0;
-  padding: 0;
-  box-sizing: border-box;
+ background-image: url('./bg.jpg');
+ background-repeat: repeat-y;
+ background-size: contain;
+
 }
 
 a:visited {
@@ -22,10 +17,10 @@ a:visited {
 
 
 .about-me{
-    margin:40rem 0 0 1.5rem;
+    
     height: 100vh;
     font-family: "League Spartan", sans-serif;
-    font-size: 2rem;
+    font-size: 3vw;
     font-weight: 700;
     color: white;
     z-index: 1;
@@ -35,11 +30,11 @@ a:visited {
 }
 .about-me-card{
   font-family: "League Spartan", sans-serif;
-  color: #3156eb;
-  font-size:1.7rem;
+  color:  #FFC600;
+  font-size:1.5vw;
   font-weight: 700;
   border-radius: 5px;
-  margin: 5rem 20% 0 20%;
+  margin: 1rem 20% 0 20%;
   cursor: pointer;
   padding: 24px 32px;
   border: 0;
@@ -48,27 +43,16 @@ a:visited {
   background-color: rgba(255, 255, 255, 0.1);
   border: 1px solid rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(30px);
-  color: rgba(255, 255, 255, 0.8);
   letter-spacing: 2px;
   word-spacing: 3px;
   cursor: pointer;
   text-transform: uppercase;
   
   
-}
+} 
 
-.about-me-card-text{
-  position: relative;
-  
-}
-.about-me-card-text::after {
-  content: "";
-  position: absolute;
-  width 1px;
-  height:25px;
-  border-right: 3px solid white;
-  animation: blink 0.5s infinite ease;
-}
+
+
 
 .nav {
   width: 100%;
@@ -83,6 +67,7 @@ a:visited {
 .navspan {
   display: inline-block;
   font-family: "League Spartan", sans-serif;
+  color: #E900FF;
   font-size: 1.5rem;
   margin: 1rem 0 0 1.5rem;
   cursor: pointer;
@@ -98,7 +83,7 @@ a:visited {
   font-family: "League Spartan", sans-serif;
   font-size: 5rem;
   font-weight: 700;
-  color: white;
+  color: #5800FF;
   z-index: 1;
   margin: 12rem 0 0 2rem;
 }
@@ -107,7 +92,7 @@ a:visited {
   font-family: "League Spartan", sans-serif;
   font-weight: 500;
   font-size: 3rem;
-  color: white;
+  color: #FFC600;
   z-index: 1;
   margin: 0 0 0 2.5rem;
 }
@@ -119,7 +104,7 @@ a:visited {
   top: 50%;
 }
 
-.btn {
+.about-me-btn {
 
   font-family: "League Spartan", sans-serif;
   color: #3156eb;
@@ -141,16 +126,54 @@ a:visited {
   cursor: pointer;
   text-transform: uppercase;
 }
-.btn:hover {
-  background-color: rgba(27, 81, 254, 0.5);
+.about-me-btn:hover {
+  background-color:#E900FF;
+  color:#5800FF;
+
+}
+
+.projects{
+  
+  margin:40rem 0 20% 30%;
+  height: 100vh;
+
+}
+
+.heading1{
+  margin: 40rem 0 0 1.5rem;
+  font-family: "League Spartan", sans-serif;
+  padding:0.5rem;
+  font-size: 5vw;
+  font-weight: 700;
+  color: #5800FF;
+}
+
+.heading2{
+  margin: 40rem 0 5rem 1.5rem;
+  font-family: "League Spartan", sans-serif;
+  font-size: 5rem;
+  font-weight: 700;
+  color: #5800FF;
+}
+.card{
+  margin-bottom:10rem;
+  font-family: "League Spartan", sans-serif;
+  color:#FFC600;
+  background-color: #E900FF;
+  $enable-gradients: true;
+  font-size:1.5vw;
+}
+
+.card-title{
+  font-size:2rem;
 }
 
 
-@keyframes blink{
-  0%{
-    opacity: 0;
-  }
-  100%{
-    opacity: 1;
-  }
+
+.details-btn{
+  color: #FFC600;
+  background-color: #5800FF;
+  border-radius:5px;
+  border-color:transparent;
+  padding:10px;
 }

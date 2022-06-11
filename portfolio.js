@@ -1,50 +1,52 @@
-const texts = [
-  "I am Shreyans Joshi, an aspiring web developer currently working on improving my javascript skills.",
-  "I am also familiar with technologies like HTML, CSS, Reactjs and Node.js",
-  "My favoured technical stack is the MERN stack.",
-  "I also do content writing in my past time.",
-  "I hope to someday become a proficient web developer.",
-];
+// const texts = [
+//   "I am Shreyans Joshi, an aspiring web developer currently working on improving my javascript skills.",
+//   "I am also familiar with technologies like HTML, CSS, Reactjs and Node.js",
+//   "My favoured technical stack is the MERN stack.",
+//   "I also do content writing in my past time.",
+//   "I hope to someday become a proficient web developer.",
+// ];
 
-let index = 0,
-  index2 = 0,
-  index3 = 0,
-  index4 = 0,
-  index5 = 0;
+// let index = 0,
+//   index2 = 0,
+//   index3 = 0,
+//   index4 = 0,
+//   index5 = 0;
 
-let currentText = "",
-  currentText2 = "",
-  currentText4 = "",
-  currentText5 = "";
-let letter = "",
-  letter2 = "",
-  letter3 = "",
-  letter4 = "",
-  letter5 = "";
+// let currentText = "",
+//   currentText2 = "",
+//   currentText4 = "",
+//   currentText5 = "";
+// let letter = "",
+//   letter2 = "",
+//   letter3 = "",
+//   letter4 = "",
+//   letter5 = "";
 
-(function type() {
-  currentText = texts[0];
-  letter = currentText.slice(0, ++index);
+// (function type() {
+//   currentText = texts[0];
+//   letter = currentText.slice(0, ++index);
 
-  document.getElementById("text1").textContent = letter;
-  if (letter.length === currentText.length) {
-    index = 0;
-  } else {
-    setTimeout(type, 200);
-  }
-})();
+//   document.getElementById("text1").textContent = letter;
+//   if (letter.length === currentText.length) {
+//     index = 0;
+//     setTimeout(type, 5000);
+//   } else {
+//     setTimeout(type, 100);
+//   }
+// })();
 
-(function type2() {
-  currentText2 = texts[1];
-  letter2 = currentText2.slice(0, ++index2);
+// (function type2() {
+//   currentText2 = texts[1];
+//   letter2 = currentText2.slice(0, ++index2);
 
-  document.getElementById("text2").textContent = letter2;
-  if (letter2.length === currentText2.length) {
-    index2 = 0;
-  } else {
-    setTimeout(type2, 200);
-  }
-})();
+//   document.getElementById("text2").textContent = letter2;
+//   if (letter2.length === currentText2.length) {
+//     index2 = 0;
+//     setTimeout(type2, 5000);
+//   } else {
+//     setTimeout(type2, 100);
+//   }
+// })();
 
 (function type3() {
   currentText3 = texts[2];
@@ -53,8 +55,9 @@ let letter = "",
   document.getElementById("text3").textContent = letter3;
   if (letter3.length === currentText3.length) {
     index3 = 0;
+    setTimeout(type3, 5000);
   } else {
-    setTimeout(type3, 200);
+    setTimeout(type3, 100);
   }
 })();
 
@@ -65,8 +68,10 @@ let letter = "",
   document.getElementById("text4").textContent = letter4;
   if (letter4.length === currentText4.length) {
     index4 = 0;
+    setTimeout(type4, 5000);
   } else {
-    setTimeout(type4, 200);
+    setTimeout(type4, 100);
+
   }
 })();
 
@@ -77,7 +82,8 @@ let letter = "",
   document.getElementById("text5").textContent = letter5;
   if (letter5.length === currentText5.length) {
     index5 = 0;
+    setTimeout(type5, 5000);
   } else {
-    setTimeout(type5, 200);
+    setTimeout(type5, 100);
   }
 })();
